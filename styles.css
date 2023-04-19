@@ -34,6 +34,8 @@
   flex: 1;
   transition: 1.4s;
   font-size: 1.9rem;
+  z-index: 1;
+
 
 }
 
@@ -48,6 +50,7 @@
   10px 10px 44px #34343b;
   -moz-box-shadow: -10px -10px 44px #1e1e21,
   10px 10px 44px #34343b;
+  z-index: 2;
 }
 
 
@@ -95,6 +98,7 @@
 
 .abt3:hover{
   margin-bottom: 40px;
+  
 }
 
 .abt4:hover{
@@ -103,3 +107,12 @@
 }
 
 
+@media (max-width: 660px){
+  .about{
+    font-size: 1.1rem;
+  }
+  .bd-highlight:hover > .about{
+    font-size: 1.2rem;
+  }
+
+}
