@@ -207,4 +207,16 @@
     #text4{
       font-size: .8rem;
     }
+    
+    #hider{
+      visibility: visible;
+      font-size: .5rem;
+      padding: 2%;
+      margin: 0%;
+      display: block;
+    }
+
+    .grid{
+      grid-template-columns: 100% 100%;
+    }
   }
