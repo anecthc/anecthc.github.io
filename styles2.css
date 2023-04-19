@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#navbar{
+  opacity: 0.8;
+}
+
+#body2 {
+  min-height: 100%;
+  width: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+}
+
+html{
+  overflow: hidden;
+  height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .slide{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25% 10%;
+    min-height: 100%;
+    box-shadow: 0 -1px 10px rgba(255, 255, 255, .7);
+    
+
+  }
+
+  .slide:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  }
+
+  .slide, .slide:before{
+    background: 50% 50%;
+  }
+
+
+  #cont{
+    background: url("https://images.unsplash.com/photo-1599875953199-2b39f58d106a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80") center / cover;
+    z-index: 2;
+  }
+
+  #slide1{
+    background: url("https://images.unsplash.com/photo-1598634549802-dcc558705f19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") center / cover;
+    transform: translateZ(-1px) scale(2);
+  }
+
+  #slide2{
+    background: url("https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80") center / cover;
+  }
+
+  #slide3{
+    background: url("https://images.unsplash.com/photo-1534963063257-6b65b54e438b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80") center / cover;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+  }
+
+  h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  .pizza{
+    position: absolute;
+    left: 1%;
+    top: 5%;
+    color: wheat;
+    text-shadow: 2px 2px #000;
+
+  }
+  .pizza2{
+    position: absolute;
+    color: wheat;
+    text-shadow: 2px 2px #000;
+    right: 5%;
+    top: 80%;
+
+  }
+.dough{
+  max-width: 850px;
+  position: absolute;
+  left: 1%;
+  top: 10%;
+}
+
+.dough2{
+  max-width: 800px;
+  position: absolute;
+  left: 1%;
+  top: 69%;
+}
+
+.dough3{
+  max-width: 800px;
+  position: absolute;
+  top: 11%;
+  left: 2%;
+}
+
+.dough4{
+  position: absolute;
+  text-align: center;
+  font-size: xx-large;
+  top: 70%;
+  left: 0;
+}
+
+
+.dough-text{
+  position: absolute;
+  color: wheat;
+  text-shadow: 2px 2px #000;
+  right: 5%;
+  top: 80%;
+}
+
+.dough-text2{
+  position: absolute;
+  color: wheat;
+  font-size: xx-large;
+  text-shadow: 2px 2px #000;
+  left: 1%;
+  top: 30%;
+}
+
+.dough-text3{
+  position: absolute;
+  color: wheat;
+  text-shadow: 2px 2px #000;
+  left: 1%;
+  right: 3%;
+  top: 35%;
+}
+
+.dough-text4{
+  color: wheat;
+  font-size: 2.7rem;
+  text-shadow: 2px 2px #000;
+}
+
+
+
+@media all and (max-width: 576px){
+  .dough-text,
+  .dough-text2,
+  .dough-text3,
+  .dough-text4{
+    font-size: 1.6rem;
+  }
+  .dough2{
+    top: 65vh;
+  }
+
+}
+@media all and (max-width: 375px){
+  .dough2{
+    top: 55vh;
+  }
+  .dough4{
+    top: 60vh;
+  }
+}
+
+@media all and (max-width: 888px) and (min-width: 576px){
+  .dough-text4{
+    font-size: 2.1rem;
+    top: 35vh;
+  }
+}

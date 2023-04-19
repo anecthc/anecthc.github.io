@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+#navbar{
+  opacity: 0.8;
+}
+
+#bd {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+
+.display-2{
+  color: moccasin;
+}
+
+.p-5{
+  background-color: aqua;
+  opacity: .8 ;
+  width: 100%;
+  min-height: 466px;
+  margin: 10px 2px;
+  margin-top: 80px;
+  display: flex;
+  flex: 1;
+  transition: 1.4s;
+  font-size: 1.9rem;
+
+}
+
+.p-5:hover{
+  flex: 2;
+  opacity: .9;
+  background-color: mediumturquoise;
+  border-radius: 15px;
+  box-shadow:  -10px -10px 44px #1e1e21,
+  10px 10px 44px #34343b;
+  -webkit-box-shadow: -10px -10px 44px #1e1e21,
+  10px 10px 44px #34343b;
+  -moz-box-shadow: -10px -10px 44px #1e1e21,
+  10px 10px 44px #34343b;
+}
+
+
+
+#abt:hover{
+ font-size: 3.1rem;
+}
+
+#link{
+  text-decoration: none;
+  color: rgb(201, 167, 201);
+}
+
+#link:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+
+}
+
+.about{
+
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.3rem;
+  position: relative;
+  transition: all .9s ease;
+}
+.bd-highlight:hover > .about{
+  visibility: visible;
+  opacity: 1;
+  font-size: 1.8rem;
+  text-align: start;
+  transition-delay: 444ms;
+}
+
+.abt1:hover{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.abt2:hover{
+  margin-top: 120px;
+  margin-bottom: -60px;
+}
+
+.abt3:hover{
+  margin-bottom: 40px;
+}
+
+.abt4:hover{
+
+  transform: translateY(-20px);
+}
+
+

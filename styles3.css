@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: var(--sizeX);
+  }
+
+
+
+  #navbar{
+    opacity: 0.8;
+  }
+
+  #bd3 {
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+  }
+
+  .section{
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 25% 10%;
+    height: 100%;
+
+  }
+
+
+  #container{
+    position: absolute;
+    color: blanchedalmond;
+    bottom: 0;
+    max-width: 35%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+   }
+
+   #container1{
+    position: absolute;
+    color: blanchedalmond;
+    bottom: 0;
+    max-width: 35%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+   }
+
+   .cont{
+    position: absolute;
+    color: blanchedalmond;
+    bottom: 0;
+    max-width: 35%;
+    height: 100%;
+    right: 10%;
+    background:linear-gradient(to bottom left, #1b2735 ,transparent);
+   }
+
+
+
+
+   .fade-in{
+    opacity: 0;
+    transition: opacity 477ms ease-in;
+   }
+
+   .fade-in.appear{
+    opacity: 1;
+   }
+
+
+   #text1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 2%;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 5px  rgba(4, 0, 2, .6);
+   }
+
+   #text2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 3%;
+    font-size: 1.55rem;
+    text-shadow: 1px 1px 5px  rgba(4, 0, 2, .6);
+    text-align: inherit;
+   }
+
+   #text3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 3%;
+    font-size: 1.55rem;
+    text-shadow: 1px 1px 5px  rgba(4, 0, 2, .6);
+    text-align: inherit;
+   }
+
+
+
+
+  #section1{
+    background: url("https://images.unsplash.com/photo-1625944230945-1b7dd3b949ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80") center / cover;
+  }
+
+  #section2{
+    background: url("https://images.unsplash.com/photo-1537215781824-73d7761029e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2028&q=80") center / cover;
+  }
+
+  #section3{
+    background: url("https://images.unsplash.com/photo-1634372307576-18e2a25e825b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") center / cover;
+  }
+
+  .scrolldown {
+    --color: white;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: absolute;
+    right: 5%;
+    bottom:25%;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 59px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  .scrolldown.diss{
+    opacity: 0;
+  }
+
+  .scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+  }
+
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+
+  .chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+
+  .chevrondown:nth-child(odd) {
+    animation: pulse54012 500ms ease infinite alternate;
+  }
+
+  .chevrondown:nth-child(even) {
+    animation: pulse54012 500ms ease infinite alternate 250ms;
+  }
+
+  @keyframes pulse54012 {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 0.5;
+    }
+  }
+
+  #text11{
+    font-size: xx-large;
+  }
+
+
+  @media all and (max-width: 1669px){
+    #container
+    {
+    max-width: 39%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .con{
+      max-width: 39%;
+    height: 100%;
+    right: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    #text2{
+      font-size: 1.3rem;
+    }
+
+  }
+
+  @media all and (max-width: 1665px){
+    #container
+    {
+    max-width: 45%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .con{
+      max-width: 39%;
+    height: 100%;
+    right: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    #text2{
+      font-size: 1.2rem;
+    }
+
+  }
+
+  @media all and (max-width: 1450px){
+
+    .con{
+      max-width: 39%;
+    height: 100%;
+    right: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    #text2{
+      font-size: 1.1rem;
+    }
+
+  }
+
+  @media all and (max-width: 1542px){
+    #container
+    {
+    max-width: 46%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    #text1{
+      font-size: 1.2rem;
+    }
+
+  }
+
+  @media all and (max-width: 1311px){
+    #container
+    {
+    max-width: 46%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    #text1{
+      font-size: 1.1rem;
+    }
+    #text2{
+      font-size: 1.1rem;
+    }
+    .fade-in{
+      max-width: 40%;
+    }
+
+  }
+
+  @media all and (max-width: 1225px){
+    #container
+    {
+    max-width: 50%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 50% 10%;
+    }
+    #text1{
+      font-size: 1.4rem;
+    }
+    #text2{
+      font-size: 1.4rem;
+  }
+
+
+  @media all and (max-width: 1170px){
+    #container
+    {
+    max-width: 55%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    #text1{
+      font-size: 1.3rem;
+    }
+    #text2{
+      font-size: 1.2rem;
+    }
+
+  }
+
+  @media all and (max-width: 961px){
+    #container
+    {
+    max-width: 66%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    #text1{
+      font-size: 1.4rem;
+    }
+    #text2{
+      font-size: 1.27rem;
+    }
+    .fade-in{
+      max-width: 50%;
+    }
+
+  }
+
+  @media all and (max-width: 887px){
+    #container
+    {
+    max-width: 70%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 56% 10%;
+    }
+    #text1,
+    #text11{
+      font-size: 1.3rem;
+      font-weight: 100;
+    }
+    .fade-in{
+      max-width: 60%;
+    }
+    #text2{
+      font-size: 1.3rem;
+    }
+
+  }
+
+  @media all and (max-width: 768px){
+    #container
+    {
+    max-width: 70%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 70% 10%;
+    }
+    #text1,
+    #text11{
+      font-size: 1.2rem;
+      font-weight: 100;
+    }
+    .fade-in{
+      max-width: 65%;
+    }
+    #text2{
+      font-size: 1.4rem;
+    }
+
+  }
+
+  @media all and (max-width: 660px){
+    #container
+    {
+    max-width: 70%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 70% 10%;
+    }
+    #text1,
+    #text11{
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+
+  }
+
+  @media all and (max-width: 594px){
+    #container
+    {
+    max-width: 70%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 80% 10%;
+    }
+    #text1,
+    #text11{
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+
+  }
+
+  @media all and (max-width: 557px){
+    #container
+    {
+    max-width: 70%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 85% 10%;
+    }
+    #text1,
+    #text11{
+      font-size: 1rem;
+      font-weight: 100;
+    }
+    .fade-in{
+      max-width: 75%;
+    }
+    #text2{
+      font-size: 1rem;
+    }
+  }
+
+  @media all and (max-width: 495px){
+    #container
+    {
+    max-width: 70%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 95% 10%;
+    }
+    #text1,
+    #text11{
+      font-size: .9rem;
+      font-weight: 100;
+    }
+    #text2{
+      font-size: .9rem;
+    }
+
+  }
+
+  @media all and (max-width: 415px){
+    #container
+    {
+    max-width: 70%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 110% 10%;
+    }
+    #text1,
+    #text11{
+      font-size: .9rem;
+      font-weight: 100;
+    }
+
+  }
+
+  @media all and (max-width: 386px){
+    #container
+    {
+    max-width: 70%;
+    height: 100%;
+    left: 10%;
+    background:linear-gradient(to bottom right, #1b2735 ,transparent);
+    }
+    .section{
+      padding: 120% 10%;
+    }
+    #text1,
+    #text11,
+    #text2{
+      font-size: .9rem;
+    }
+
+  }

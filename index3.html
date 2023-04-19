@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <link href="styles3.css" rel="stylesheet">
+    <title>My Web</title>
+</head>
+<body id="bd3">
+    <header class="container-fluid px-0 py-0 sticky-top" id="navbar">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand nav-link active" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index2.html">Pizza</a>
+                  <a class="nav-link active" href="index3.html" aria-current="page" style="color: #d1ffd9;">Cook</a>
+                  <a class="nav-link" href="index4.html">My City</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="scrolldown" style="--color: black">
+      <div class="chevrons">
+          <div class="chevrondown"></div>
+          <div class="chevrondown"></div>
+      </div>
+  </div>
+    <section class="container-fluid section" id="section1">
+
+      <div class="container-fluid" id="container">
+        <div id="text1"><p>Mediterranean cuisine is defined by the food and preparation methods used by the inhabitants in the
+          Mediterranean region. That is to say, the food of the people living along the Mediterranean Sea, from Spain to Morocco through Italy, Greece, Tunisia and other countries.
+        </p>The focus is on fresh products, pronounced flavours and simple preparation. Essentially, Mediterranean cuisine is made up of plant food and minimally processed staples where herbs and spices are essential ingredients.
+          Usually, there’s lots of fruit, veggies, legumes, grains, olive oil and aromatic herbs. Consuming dairy, eggs and wine in moderation, as well as fish and only a little meat.
+          <br><br>
+          <p id="text11">Main characteristics</p>
+          <ul>
+            <li>Food most often consumed is plant-based.
+              <li>Meat products are also consumed in moderation.
+                <li>Not only the variety of products is very important, but &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;consuming local products to maximize flavour.
+                  <li>Ideally, the products being harvested are consumed.
+                    <li>There are limited sweet products.
+                      <li>Olive oil is a common ingredient.
+                        <li>Herbs and spices, onions and garlic are used instead of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;salt.</li>
+                      </ul>
+              </div>
+      </div>
+    </section>
+    <section class="container-fluid section" id="section2">
+      <div class="cont container-fluid fade-in">
+          <div id="text2">&nbsp;The Greek diet is an important part of the Mediterranean cuisine and has something in common with the traditional cuisine of Italy, the Balkans, Turkey and the Levant.
+            <br>&nbsp;&nbsp;Although each country has its own range of food and culinary traditions, many recipes are similar in terms of ingredients and nutritional value.
+            <br>&nbsp;&nbsp;The Greek gastronomic identity is rich and deeply rooted in time. Greece has one of the oldest gastronomic traditions in the world. It's a tradition of flavours, materials and styles that goes from prehistory to the present. In every Greek recipe, the combination of fresh ingredients and culinary techniques is a very interesting gastronomic journey into the history of Greece.
+            <br>&nbsp;&nbsp;Vegetables, olive oil, granola, fish, wine, and meat are commonly used in modern Greek cuisine. Other important products are olives, cheese, eggplant, zucchini, and yogurt. The main characteristics of Greek sweets are nuts and honey, while various fruits are often used. The latter are the basic material for the production of the so-called spoon sweets.
+            <br>&nbsp;&nbsp;Another important aspect of Greek cuisine is the appetizers, also known as "mezedes", a timeless name known around the world. Mention a traditional selection of side dishes usually served in taverns and restaurants with wine, ouzo or tsipouro.
+          </div>
+      </div>
+    </section>
+    <section class="container-fluid section" id="section3">
+      <div class="container container-fluid fade-in" id="container1">
+          <div id="text3">Greece is an ideal destination for food lovers! Vacation in the Greek islands means Mediterranean food, delicious local recipes and fresh organic products.
+
+          </div>
+      </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+    <script>
+
+      const faders = document.querySelectorAll(".fade-in");
+      const appearOptions = {threshold: .50,};
+
+
+      const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry =>{
+          if (!entry.isIntersecting){
+            return;
+          }
+          else{
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+          }
+        })
+      },
+      appearOptions);
+
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+
+      });
+    </script>
+
+</body>
+</html>
